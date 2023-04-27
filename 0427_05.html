@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사각형변형</title>
+</head>
+<style>
+p{
+    border: 3px solid rgb(0, 0, 0);
+    background-color: white;
+    color: black;   
+    padding: 15px;
+    font-size: 25px;
+}
+/* 사각형의 색상 변경(각기 변하는 시점을 달리), 글씨 색상 변경 */
+@media screen and (min-width:600px){    /*뷰포트 너비가 350이하일때*/
+    p#f{
+        background-color: dodgerblue;
+    }
+}
+@media screen and (min-width:700px){    /*뷰포트 너비가 350이하일때*/
+    p#s{
+        background-color: rgb(142, 8, 252);
+    }
+}
+@media screen and (min-width:800px){    /*뷰포트 너비가 350이하일때*/
+    p#t{
+        background-color: rgb(0, 165, 69);
+    }
+}
+@media screen and (min-width:900px){    /*뷰포트 너비가 350이하일때*/
+    p#fo{
+        background-color: rgb(255, 60, 0);
+    }
+}
+@media screen and (min-width:1000px){    /*뷰포트 너비가 350이하일때*/
+    p#fi{
+        background-color: rgb(255, 230, 0);
+    }
+}
+@media screen and (min-width:1100px){    /*뷰포트 너비가 350이하일때*/
+    p{
+        color: aliceblue;
+        font-size: 30px
+    }
+}
+
+
+
+</style>
+<body>
+    <p id="f">1111</p>
+    <p id="s">2222</p>
+    <p id="t">3333</p>
+    <p id="fo">4444</p>
+    <p id="fi">5555</p>
+
+</body>
+</html>
