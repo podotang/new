@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 뷰포트 메타 태그 :: "반응형 웹"을 만들떄 필요한태그 -->
+    <!-- 뷰포트 :: 브라우저 창의 영역/크기 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹</title>
+</head>
+<style>
+/* width,height,max-width,min-width,max-height,min-height */
+
+/* max-width/height :: "max값에 한계를 가진" 너비 및 높이값 설정 */
+/* 최대값은 width나 height로 지정된 값이나 원본 사진의 너비 및 높이를 따른다 */
+
+/* min-width/height :: "min값에 한계를 가진" 너비 및 높이값 설정 */
+/* 최소값은 width나 height로 지정된 값이나 원본 사진의 너비 및 높이를 따른다 */
+
+img{
+    /* min-width:50%;
+    max-width: 50%; */
+}
+
+img{
+    max-width: 70%;
+    width: 700px;   /*이미지*/
+}
+</style>
+
+<p style="font-size: 30px;">늘렸다 줄였다</p>
+
+<body>
+    <!-- srcset,media -->
+    <picture>
+        <source srcset="https://upload3.inven.co.kr/upload/2022/01/08/bbs/i14142767111.jpg"
+        media="(max-width:600px)" style="width: 200px;"> <!--뷰포트 넓이가 600이하일때 보여준다-->
+        <source srcset="https://cdn.sketchpan.com/member/t/tjsgmlss/draw/1330953965625/0.png"
+        media="(max-width:1200px)" style="width: 900px;">
+        <source srcset="https://i.pinimg.com/736x/4c/42/23/4c4223fe633e2774a886289207cf3f15.jpg"
+                                    style="width: 1400px;">
+        <img>   
+        <!-- /*이미지 공간 배정만 하는 용도*/ -->
+    </picture>
+<!-- 뷰포트의 크기에 따라 사이즈를 다르게 하고싶다면 :: vw(viewport width)를 사용하라 -->
+
+<!-- <img src="https://image.aladin.co.kr/product/12587/43/cover500/e896607164_1.jpg"
+style="width: 400px;"> 
+<br>
+  <label style="font-size: 10vw;">태그입니다.</label>    -->
+</body>
+</html>
+
+
+
+
+
+
